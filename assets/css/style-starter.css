@@ -14262,7 +14262,7 @@ p.white {
   color: var(--primary-color);
 }
 
-.sub-title:after,
+/* .sub-title:after,
 .sub-title-1::after {
   content: '';
   display: block;
@@ -14273,7 +14273,7 @@ p.white {
   z-index: 1;
   left: 200px;
   top: 50%;
-}
+} */
 .sub-title:before,
 .sub-title-1::before {
   content: '';
@@ -14757,7 +14757,7 @@ nav ul li a:hover {
   position: absolute;
   content: '';
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background: var(--primary-color);
   bottom: 0px;
   left: 0;
@@ -14767,7 +14767,11 @@ nav ul li a:hover {
 }
 
 .nav-link:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(.8);
+}
+
+.btn-trans:hover {
+  color: var(--primary-color);
 }
 
 @-webkit-keyframes rotation-show {
@@ -14972,22 +14976,28 @@ header.nav-fixed {
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar-brand img {
-    max-width: 200px;
+  .logo-img {
+    max-width: 30px;
   }
 
   .mobile-position {
     position: absolute;
     right: 50px;
-    top: 3px;
+    top: 8px;
   }
 
   .navbar .navbar-brand {
-    font-size: 28px;
+    font-size: .8rem;
   }
 }
 
 @media only screen and (max-width: 991px) {
+  /* .grid-md-1fr {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+  } */
+
   .w3l-top-header {
     position: relative;
     height: 73px;
@@ -15857,7 +15867,7 @@ section.w3_stats {
   font-size: 26px;
   border-radius: 50%;
   width: 65px;
-  height: 65px;
+  height: 65px0;
   line-height: 65px;
   color: #fff;
   text-align: center;
@@ -15905,7 +15915,7 @@ p.count-text {
 /*--//stats--*/
 /*--/--*/
 .w3l-form-25-section {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/IMG_1904.jpeg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -15937,7 +15947,7 @@ p.count-text {
 /*--//--*/
 /* middle */
 .middle {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/IMG_1905.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16048,10 +16058,10 @@ p.count-text {
 .w3l-newsletter .forms-25-info input {
   background: #f5f5f5;
   width: 100%;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0px 20px;
   color: var(--font-color);
-  height: 55px;
+  height: 50px;
   text-align: left;
   -webkit-appearance: none;
   outline: none;
@@ -16064,6 +16074,12 @@ p.count-text {
 .w3l-newsletter .forms-25-info input:focus {
   border: 1px solid var(--primary-color);
   background: #fff;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media all and (max-width:380px) {
   .w3l-videohny .history-info {
@@ -16228,9 +16244,8 @@ p.count-text {
 }
 
 .w3l-copyright p.copy-footer-29 {
-  align-self: center;
   color: #ddd;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -17146,7 +17161,7 @@ ul.page-pagination li a.next:hover {
 /*--//blog--*/
 /*--/inner-banner--*/
 .inner-banner {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../images/IMG_1906.jpeg) no-repeat center;
   background-size: cover;
   min-height: 300px;
   position: relative;
