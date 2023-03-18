@@ -5053,7 +5053,8 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding-inline: 1.25rem;
+  padding-top: 4rem;
 }
 
 .card-title {
@@ -8709,7 +8710,7 @@ button.bg-dark:focus {
 
 .pt-4,
 .py-4 {
-  padding-top: 1.5rem !important;
+  padding-top: 1.5rem;
 }
 
 .pr-4,
@@ -8719,7 +8720,7 @@ button.bg-dark:focus {
 
 .pb-4,
 .py-4 {
-  padding-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem;
 }
 
 .pl-4,
@@ -11726,6 +11727,10 @@ a.text-dark:focus {
 
 .fa-linkedin-square:before {
   content: "";
+}
+
+.fa-telegram:before {
+  content: "f2c6";
 }
 
 .fa-thumb-tack:before {
@@ -15231,7 +15236,9 @@ header.nav-fixed {
   }
 
   .w3l-main-slider .banner-info-bg {
-    margin-top: 40px;
+    margin-block: auto;
+    padding-block-end: 0;
+    padding-block: 20px;
   }
 
   .w3l-main-slider .arrow-downhny {
@@ -15241,6 +15248,15 @@ header.nav-fixed {
     right: 0px;
     margin: 0 auto;
     text-align: center;
+  }
+/* 
+  .middle .container .py-4 {
+    padding-block: 0 !important;
+    margin: 0 auto;
+
+  } */
+  .middle .pb-5 {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -15844,7 +15860,7 @@ section.w3_stats {
 }
 
 .w3-stats p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .counter {
@@ -16839,10 +16855,11 @@ div#small-dialog iframe {
   }
 }
 
+
 /*-- //play icon animation --*/
 
 .w3l-videohny .history-info{
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/IMG_1905.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16924,7 +16941,7 @@ div#small-dialog iframe {
 .w3l-homeblog .top-pic6,
 .w3l-homeblog .top-pic7,
 .w3l-homeblog .top-pic8 {
-  background: url(../images/IMG_1961.JPG) no-repeat 0px 0px;
+  background: url(../images/IMG_1970.JPG) no-repeat 0px 0px;
   background-size: cover;
   padding: 10px;
   border-radius: var(--border-radius-full);
@@ -16936,7 +16953,7 @@ div#small-dialog iframe {
 }
 
 .w3l-homeblog .top-pic2 {
-  background: url(../images/IMG_1962.JPG) no-repeat 0px 0px;
+  background: url(../images/IMG_1971.JPG) no-repeat 0px 0px;
   background-size: cover;
 }
 
@@ -17017,8 +17034,8 @@ div#small-dialog iframe {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0);
-  opacity: .7;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
   border-radius: var(--border-radius-full);
   z-index: -1;
 }
@@ -17061,10 +17078,10 @@ div#small-dialog iframe {
 }
 
 .w3l-homeblog p.course-sub {
-  color: #fff;
-  opacity: 0.9;
+  color: rgb(0 0 0 / 1);
+  opacity: 1;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 14px;
 }
 
@@ -17367,6 +17384,12 @@ ul.page-pagination li a.next:hover {
   .w3l-team-main .team-title {
     font-size: 18px;
   }
+}
+
+.fx-text {
+  color: black;
+  /* color: rgba(255, 255, 255, .8); */
+  /* padding-top: 4px; */
 }
 
 @media all and (max-width: 568px) {
