@@ -17,17 +17,17 @@
             <nav class="navbar navbar-expand-lg navbar-dark stroke dash-nav">
                 <div class="profile">
                     <div class="content">
-                        <div class="header">
+                        <!-- <div class="header">
                             <img src="./assets/images/admin.jpg" alt="admin" style="height:35px">
-                        </div>
+                        </div> -->
                         <div class="body">
                             <div class="user">
-                                <img src="./assets/images/admin.jpg" alt="admin" style="height:35px">
+                                <img src="./assets/images/admin.jpg" alt="admin">
                                 <h4>John Doe</h4>
                                 <p>johndoe@gmail.com</p>
-                                <p>Gold member</p>
+                                <span>Gold member</span>
                             </div>
-                            <ul>
+                            <ul class="user-link">
                                 <li><a href="#profile">Your Profile</a></li>
                                 <li><a href="#profile">Contact Support</a></li>
                                 <li><a href="#profile">View Saved Courses</a></li>
@@ -55,14 +55,14 @@
                    
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="signals.html">Signals</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                        
                         <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Courses</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     
@@ -119,8 +119,97 @@
     </div>
 
 
-    <main>
-        <h1>Welcome!</h1>
+    <main class="dashboard">
+        <div class="courses">
+            <section class="w3l-videohny" id="video">
+                <div class="new-block py-5">
+                    <div class="container py-lg-5">
+                        <h1>View saved courses</h1>
+            
+                        <div class="history-info position-relative">
+                            <!--//video-->
+                            <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+                                <span class="video-play-icon">
+                                    <span class="fa fa-play"></span>
+                                </span>
+                            </a>
+            
+                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                <iframe src="https://player.vimeo.com/video/18212142" frameborder="0" allow="autoplay; fullscreen"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <!--//video-->
+                        </div>
+            
+                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                            <iframe src="https://player.vimeo.com/video/18212142" frameborder="0" allow="autoplay; fullscreen"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="w3l-homeblog py-5" id="homeblog">
+                <div class="container py-lg-5 py-md-4">
+                    <div class="header-title">
+                        <h3 class="hny-title text-left">Recent trading signals</h3>
+                    </div>
+                    <div class="row top-pics ">
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic1">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub fx-text">Some text</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic2">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub">Some Text</p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic3">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub">Some Text</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic4">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub">Some Text</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic5">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub">Some Text</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="top-pic6">
+                                <div class="card-body blog-details">
+                                    <p class="course-sub">Some Text</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //home page video popup section -->
+        </div>
     </main>
 
     
